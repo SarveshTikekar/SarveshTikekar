@@ -2,7 +2,7 @@
 🔭 Currently learning: Data Analytics and Storytelling + Data Engineering along with a bit of PySpark. <br>
 ⚡ Fun fact: The first ever Linux kernel occupied only 65 KB!! <br> Also interested to delve deep into Linux Ricing (Currently doing one on my own NeoVim setup for dev) <br>
 
-📎 Resume: <a href="https://shorturl.at/pW3ZT"> Sarvesh's Resume <br>
+📎 Resume: <a href="https://tinyurl.com/SarveshTikekar-Resume"> Sarvesh's Resume <br>
 📧: <a href="sarvesh1.tikekar@gmail.com"> sarvesh1.tikekar@gmail.com <br>
 
 
