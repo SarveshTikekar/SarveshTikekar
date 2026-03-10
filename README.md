@@ -1,13 +1,14 @@
 
-    <!-- GIFOS_SECTION_START -->
-<div align="center">
+    <div align="center">
+<!-- GIFOS_SECTION_START -->
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
 <source media="(prefers-color-scheme: light)" srcset="./output.gif">
 <img alt="Sarv OS" src="output.gif" width="1000">
 </picture>
-</div>
 <!-- GIFOS_SECTION_END -->
+</div>
+
 
     
     
