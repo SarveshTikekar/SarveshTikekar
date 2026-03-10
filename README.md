@@ -1,5 +1,4 @@
-
-    <div align="center">
+<div align="center">
 <!-- GIFOS_SECTION_START -->
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
@@ -9,9 +8,6 @@
 <!-- GIFOS_SECTION_END -->
 </div>
 
-
-    
-    
 
 ## Professional Summary
 Backend Engineer & Data Science Enthusiast proficient in Python, JavaScript and C/C++. Experienced in building scalable APIs and data-driven systems, leveraging NumPy and Pandas for complex data analysis. Adept at managing relational databases and ML-integration within a Linux development environment. Focused on writing performance-oriented code and bridging the gap between robust backend architecture and analytical insights.<br>
