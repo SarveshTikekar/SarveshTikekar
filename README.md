@@ -1,3 +1,15 @@
+
+    <!-- GIFOS_SECTION_START -->
+    <div align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
+        <source media="(prefers-color-scheme: light)" srcset="./output.gif">
+        <img alt="Sarv OS" src="output.gif" width="1000">
+    </picture>
+
+    <!-- GIFOS_SECTION_END -->
+    
+
 ## Professional Summary
 Backend Engineer & Data Science Enthusiast proficient in Python, JavaScript and C/C++. Experienced in building scalable APIs and data-driven systems, leveraging NumPy and Pandas for complex data analysis. Adept at managing relational databases and ML-integration within a Linux development environment. Focused on writing performance-oriented code and bridging the gap between robust backend architecture and analytical insights.<br>
 
