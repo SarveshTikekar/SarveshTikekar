@@ -2,7 +2,7 @@ from datetime import datetime
 
 import gifos
 from zoneinfo import ZoneInfo
-import re
+import re, textwrap
 
 FONT_FILE_LOGO = "./fonts/Poppins-Black.ttf"
 FONT_FILE_BITMAP = "./fonts/JetBrainsMonoNerdFont-Regular.ttf"
