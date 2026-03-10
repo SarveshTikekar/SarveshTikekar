@@ -30,6 +30,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIFOS_GENERAL_CURSOR: "█"
           GIFOS_GENERAL_USER_NAME: SarveshTikekar
+          GIFOS_YORU_DEFAULT_COLORS_BG: "#0d1117"
 
       - name: Update readme
         run: |
