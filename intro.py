@@ -157,15 +157,15 @@ def main():
     t.gen_gif()
 
     gif_section = rf"""<!-- GIFOS_SECTION_START -->
-    <div align="center">
-    <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
-    <source media="(prefers-color-scheme: light)" srcset="./output.gif">
-    <img alt="Sarv OS" src="output.gif" width="1000">
-    </picture>
-    </div>
-    <!-- GIFOS_SECTION_END -->
-    """
+<div align="center">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="./output.gif">
+<source media="(prefers-color-scheme: light)" srcset="./output.gif">
+<img alt="Sarv OS" src="output.gif" width="1000">
+</picture>
+</div>
+<!-- GIFOS_SECTION_END -->
+"""
 
     try:
         with open("README.md", "r", encoding="utf-8") as f:
