@@ -1,0 +1,39 @@
+name: Add intro gif in README
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  add-intro-in-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Install dependencies
+        run: |
+          sudo apt update && sudo apt install -y ffmpeg
+          python -m pip install --upgrade pip
+
+          # My own fork of the gifos library
+          pip install git+https://github.com/SarveshTikekar/Sarvesh-readme-terminal.git@main
+
+      - name: Run script
+        run: python intro.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIFOS_GENERAL_COLOR_SCHEME: "onedark"
+          GIFOS_GENERAL_CURSOR: "█"
+          GIFOS_GENERAL_USER_NAME: SarveshTikekar
+
+      - name: Update readme
+        run: |
+          git add README.md output.gif
+          git -c "user.name=bot" -c "user.email=bot@github.com" commit -m "Automatically updated on $(TZ='Asia/Kolkata' date)"
+          git push
