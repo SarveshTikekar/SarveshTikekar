@@ -59,10 +59,10 @@ def main():
     t.clear_frame()
     t.clone_frame(5)
     t.toggle_show_cursor(False)
-    t.gen_text("\x1b[93mGIF OS v1.0.11 (tty1)\x1b[0m", 1, count=5)
+    t.gen_text("\x1b[93mSarv OS v1.1 (tty1)\x1b[0m", 1, count=5)
     t.gen_text("login: ", 3, count=5)
     t.toggle_show_cursor(True)
-    t.gen_typing_text("ssh_here", 3, contin=True)
+    t.gen_typing_text("Sarvesh Tikekar", 3, contin=True)
     t.gen_text("", 4, count=5)
     t.toggle_show_cursor(False)
     t.gen_text("password: ", 4, count=5)
@@ -156,16 +156,17 @@ def main():
     t.gen_typing_text("\x1b[92mreboot\x1b[0m", t.curr_row, contin=True)
     t.gen_gif()
 
-    gif_section = rf"""<!-- GIFOS_SECTION_START -->
+    gif_section = textwrap.dedent(f"""\
 <div align="center">
+<!-- GIFOS_SECTION_START -->
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
 <source media="(prefers-color-scheme: light)" srcset="./output.gif">
 <img alt="Sarv OS" src="output.gif" width="1000">
 </picture>
-</div>
 <!-- GIFOS_SECTION_END -->
-"""
+</div>
+""")
 
     try:
         with open("README.md", "r", encoding="utf-8") as f:
