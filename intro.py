@@ -162,7 +162,7 @@ def main():
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
         <source media="(prefers-color-scheme: light)" srcset="./output.gif">
-        <img alt="Sarv OS" src="output.gif" width="{t.width}">
+        <img alt="Sarv OS" src="output.gif" width="1000">
     </picture>
 
     <!-- GIFOS_SECTION_END -->
