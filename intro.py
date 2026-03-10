@@ -156,14 +156,16 @@ def main():
     t.gen_typing_text("\x1b[92mreboot\x1b[0m", t.curr_row, contin=True)
     t.gen_gif()
 
-    gif_section = rf"""
-    <!-- GIFOS_SECTION_START -->
+    gif_section = rf"""<!-- GIFOS_SECTION_START -->
     <div align="center">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
-        <source media="(prefers-color-scheme: light)" srcset="./output.gif">
-        <img alt="Sarv OS" src="output.gif" width="1000">
+    <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
+    <source media="(prefers-color-scheme: light)" srcset="./output.gif">
+    <img alt="Sarv OS" src="output.gif" width="1000">
     </picture>
+    </div>
+    <!-- GIFOS_SECTION_END -->
+    """
 
     <!-- GIFOS_SECTION_END -->
     """
