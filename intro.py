@@ -155,34 +155,6 @@ def main():
     t.gen_prompt(t.curr_row + 2)
     t.gen_typing_text("\x1b[92mreboot\x1b[0m", t.curr_row, contin=True)
     t.gen_gif()
-
-    gif_section = textwrap.dedent(f"""\
-<div align="center">
-<!-- GIFOS_SECTION_START -->
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="./output.gif">
-<source media="(prefers-color-scheme: light)" srcset="./output.gif">
-<img alt="Sarv OS" src="output.gif" width="1000">
-</picture>
-<!-- GIFOS_SECTION_END -->
-</div>
-""")
-
-    try:
-        with open("README.md", "r", encoding="utf-8") as f:
-            existing_readme = f.read()
-    except FileNotFoundError:
-        existing_readme = ""
-
-    pattern = r"<!-- GIFOS_SECTION_START -->.*<!-- GIFOS_SECTION_END -->"
-
-    if re.search(pattern, existing_readme, flags=re.DOTALL):
-        updated_readme = re.sub(pattern, gif_section, existing_readme, flags=re.DOTALL)
-    else:
-        updated_readme = gif_section + "\n\n" + existing_readme
-
-    with open("README.md", "w", encoding="utf-8") as f:
-        f.write(updated_readme)
    
 if __name__ == "__main__":
     main()
