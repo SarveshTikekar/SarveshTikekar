@@ -167,9 +167,6 @@ def main():
     <!-- GIFOS_SECTION_END -->
     """
 
-    <!-- GIFOS_SECTION_END -->
-    """
-
     try:
         with open("README.md", "r", encoding="utf-8") as f:
             existing_readme = f.read()
