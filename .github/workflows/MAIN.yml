@@ -1,4 +1,4 @@
-name: Generate breakout svg for 2d contibution game
+name: generate breakout svg
 
 on:
   schedule:
@@ -20,13 +20,12 @@ jobs:
         uses: cyprieng/github-breakout@v1
         with:
           github_username: ${{ github.repository_owner }}
-          paddle_color: "#ffd60a"
 
       - name: Move generated SVGs to temp
         run: |
           mkdir -p /tmp/breakout-images
-          mv light.svg /tmp/breakout-images/breakout-light.svg
-          mv dark.svg /tmp/breakout-images/breakout-dark.svg
+          mv output/light.svg /tmp/breakout-images/breakout-light.svg
+          mv output/dark.svg /tmp/breakout-images/breakout-dark.svg
 
       - name: Configure git
         run: |
