@@ -28,7 +28,6 @@ jobs:
         run: python intro.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIFOS_GENERAL_COLOR_SCHEME: "onedark"
           GIFOS_GENERAL_CURSOR: "█"
           GIFOS_GENERAL_USER_NAME: SarveshTikekar
 
