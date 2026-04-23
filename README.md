@@ -55,7 +55,8 @@ Backend Engineer & Data Science Enthusiast proficient in Python, JavaScript and 
     <tr>
       <td align="center"><b>Dev Tools</b></td>
       <td>
-        <img src="https://img.shields.io/badge/NeoVim-%2357A143.svg?style=flat-square&logo=neovim&logoColor=white" alt="NVIM" />
+        <img src="https://img.shields.io/badge/Supabase-%3FCF8E.svg?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
+        <img src="https://img.shields.io/badge/NeoVim-%2357A143.svg?style=flat-square&logo=neovim&logoColor=white" alt="Nvim" />
         <img src="https://img.shields.io/badge/Tmux-%23affc41.svg?style=flat-square&logo=tmux&logoColor=black" alt="Tmux" />
         <img src="https://img.shields.io/badge/Git-%23F05032.svg?style=flat-square&logo=git&logoColor=white" alt="Git" />
         <img src="https://img.shields.io/badge/GitHub-%23181717.svg?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
